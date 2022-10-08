@@ -1,0 +1,110 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(../img/bg/purple.jpg);
+    background-repeat: repeat;
+    background-attachment:fixed;
+    margin: 0%;
+    .contenedor{
+        display: grid;
+        min-height: 100vh;
+         grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+}
+
+header{
+    background-color:$mainColor;
+    top: 0;
+    left: 0;
+    width: 100%;
+    grid-area: header;
+    img{
+        width: 100px
+    }
+}
+
+nav{
+    ul{
+        list-style:none;
+        li{
+            font-size: 15px;
+            padding: 5px 15px;
+            margin: 4px;
+            background-color:$mainColor;
+            border-radius: 15px;
+            border: solid black 1px;
+            &:hover{
+                transform: scale(1.05);
+                background-color: $secondaryColor;
+            }     
+        }                
+}   }  
+
+main{
+    .formap{
+        form{
+            background-color: $mainColor;
+            padding: 50px;
+            margin-bottom: 20px;
+            border: $border;
+            border-radius: 20px;
+            
+            div{
+                margin-top: 1rem;
+                input, textarea, label{
+                   padding: 5px 25px;
+                   font-size: 15px;
+                }
+
+            }
+            .boton{
+                input{
+                    width: 90%;
+                    padding: 8px 16px;
+                    margin-top: 32px;
+                    margin: 5px ;
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                    display: block;
+                    color: rgb(0, 0, 0);
+                    background-color: rgba(185, 178, 88, 0.719);
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .map{
+            background-color: $mainColor;
+            padding: 10px;
+            border: $border;
+            border-radius:50px;
+            iframe{
+                border: $border;
+                border-radius:30px;
+            }
+        }
+        
+    }
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $mainColor;
+    justify-content: space-between;
+    grid-area: footer;
+    img{
+        height: 100px;
+    }
+    .imgFooter{
+        height: 55px;
+        margin: 10px;
+    }
+}
