@@ -123,7 +123,6 @@ main div {
 main section {
   margin-top: 55px;
   margin-bottom: 10px;
-  margin-left: 55px;
   width: 90%;
   height: auto;
   font-size: 40px;
@@ -171,7 +170,6 @@ footer .imgFooter {
 main section {
   margin-top: 55px;
   height: auto;
-  margin-left: 55px;
   font-size: 40px;
   color: rgb(0, 0, 0);
   padding: 10px 5px;
