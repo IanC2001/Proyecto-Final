@@ -3,26 +3,28 @@ main{
     section{
         margin-top: 55px;
         height: auto;
-        font-size: 40px;
+        font-size: $textLg;
         color: rgb(0, 0, 0);
         padding: 10px 5px;
         border: solid black 3px;
         p{
             @include mq_480px{
-                font-size: 20px ;
+                font-size: $tituloSm;
             }
         }
     }
 
     div{
         .textoColaborar{
-            font-size:20px ;
+            list-style:none;
+            font-size:$textLg;
             text-align:left;
             padding: 10px;
             background-color: $mainColor;
             border: $border;
             @include mq_682px{
-                font-size: 15px ;
+                font-size: $textMd ;
+                list-style:none;
             }
         }
         img{
@@ -34,19 +36,5 @@ main{
     }
 }       
 
-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: $mainColor;
-    justify-content: space-between;
-    grid-area: footer;
-    img{
-        height: 100px;
-    }
-    .imgFooter{
-        height: 55px;
-        margin: 10px;
-    }
-}
+
    

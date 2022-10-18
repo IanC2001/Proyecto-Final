@@ -1,5 +1,4 @@
 
-
 main{
     display: flex;
     margin-top: 55px;
@@ -13,19 +12,5 @@ main{
     }
 }      
 
-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: $mainColor;
-    justify-content: space-between;
-    grid-area: footer;
-    img{
-        height: 100px;
-    }
-    .imgFooter{
-        height: 55px;
-        margin: 10px;
-    }
-}
+
    

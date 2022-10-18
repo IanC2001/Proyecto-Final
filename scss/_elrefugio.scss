@@ -10,18 +10,19 @@ main{
             margin-bottom: 10px;
             width: 90%;
             height: auto;
-            font-size: 40px;
+            font-size: $textLg;
             color: $keyColor;
             padding: 10px 5px;
             border: solid black 3px;
         }
         .bgPerro{
             @include mq_850px{
-                font-size: 20px ;
+                font-size: $textLg ;
                 background-image: url(../img/refugio/nariz-de-un-perro.png);
-                background-size: auto;
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
+                
             }
         }
        
@@ -37,18 +38,3 @@ main{
     }
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: $mainColor;
-    justify-content: space-between;
-    grid-area: footer;
-    img{
-        height: 100px;
-    }
-    .imgFooter{
-        height: 55px;
-        margin: 10px;
-    }
-}

@@ -125,7 +125,7 @@ main section {
   margin-bottom: 10px;
   width: 90%;
   height: auto;
-  font-size: 40px;
+  font-size: 20px;
   color: black;
   padding: 10px 5px;
   border: solid black 3px;
@@ -133,13 +133,12 @@ main section {
 main section article h1, main section article h2 {
   font-size: 40px;
 }
-main section article p {
+main section article ul {
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
 }
 @media (max-width: 682px) {
-  main section article p {
+  main section article ul {
     font-size: 20px;
   }
 }
@@ -175,17 +174,18 @@ footer .imgFooter {
 main section {
   margin-top: 55px;
   height: auto;
-  font-size: 40px;
+  font-size: 20px;
   color: rgb(0, 0, 0);
   padding: 10px 5px;
   border: solid black 3px;
 }
 @media (max-width: 480px) {
   main section p {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 main div .textoColaborar {
+  list-style: none;
   font-size: 20px;
   text-align: left;
   padding: 10px;
@@ -195,6 +195,7 @@ main div .textoColaborar {
 @media (max-width: 682px) {
   main div .textoColaborar {
     font-size: 15px;
+    list-style: none;
   }
 }
 main div img {
@@ -204,22 +205,6 @@ main div img {
   main div img {
     display: none;
   }
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: rgba(242, 245, 71, 0.5);
-  justify-content: space-between;
-  grid-area: footer;
-}
-footer img {
-  height: 100px;
-}
-footer .imgFooter {
-  height: 55px;
-  margin: 10px;
 }
 
 main div {
@@ -233,7 +218,7 @@ main div section {
   margin-bottom: 10px;
   width: 90%;
   height: auto;
-  font-size: 40px;
+  font-size: 20px;
   color: black;
   padding: 10px 5px;
   border: solid black 3px;
@@ -242,7 +227,7 @@ main div section {
   main div .bgPerro {
     font-size: 20px;
     background-image: url(../img/refugio/nariz-de-un-perro.png);
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -257,22 +242,6 @@ main div div .imgPerros {
   height: 500px;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: rgba(242, 245, 71, 0.5);
-  justify-content: space-between;
-  grid-area: footer;
-}
-footer img {
-  height: 100px;
-}
-footer .imgFooter {
-  height: 55px;
-  margin: 10px;
-}
-
 main {
   display: flex;
   margin-top: 55px;
@@ -284,22 +253,6 @@ main .videoFlex {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: rgba(242, 245, 71, 0.5);
-  justify-content: space-between;
-  grid-area: footer;
-}
-footer img {
-  height: 100px;
-}
-footer .imgFooter {
-  height: 55px;
-  margin: 10px;
 }
 
 header {
@@ -366,22 +319,6 @@ main .formap .map {
 main .formap .map iframe {
   border: solid black 3px;
   border-radius: 30px;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: rgba(242, 245, 71, 0.5);
-  justify-content: space-between;
-  grid-area: footer;
-}
-footer img {
-  height: 100px;
-}
-footer .imgFooter {
-  height: 55px;
-  margin: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
