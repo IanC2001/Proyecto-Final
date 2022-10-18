@@ -136,7 +136,12 @@ main section article h1, main section article h2 {
 main section article p {
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 25px;
+  font-size: 40px;
+}
+@media (max-width: 682px) {
+  main section article p {
+    font-size: 20px;
+  }
 }
 main .imgViejito {
   height: 35rem;
@@ -175,12 +180,22 @@ main section {
   padding: 10px 5px;
   border: solid black 3px;
 }
+@media (max-width: 480px) {
+  main section p {
+    font-size: 20px;
+  }
+}
 main div .textoColaborar {
   font-size: 20px;
   text-align: left;
   padding: 10px;
   background-color: rgba(242, 245, 71, 0.5);
   border: solid black 3px;
+}
+@media (max-width: 682px) {
+  main div .textoColaborar {
+    font-size: 15px;
+  }
 }
 main div img {
   height: 200px;
@@ -222,6 +237,15 @@ main div section {
   color: black;
   padding: 10px 5px;
   border: solid black 3px;
+}
+@media (max-width: 850px) {
+  main div .bgPerro {
+    font-size: 20px;
+    background-image: url(../img/refugio/nariz-de-un-perro.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 main div div {
   display: flex;

@@ -75,7 +75,12 @@ main{
             p{
                 color:$keyColor;
                 font-family: 'Roboto', sans-serif;
-                font-size: $tituloSm; 
+                font-size: 40px;
+                @include mq_682px{
+                    font-size: 20px ;
+                }
+                
+                
             }
         }
     }

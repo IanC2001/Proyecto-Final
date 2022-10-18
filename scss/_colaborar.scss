@@ -7,6 +7,11 @@ main{
         color: rgb(0, 0, 0);
         padding: 10px 5px;
         border: solid black 3px;
+        p{
+            @include mq_480px{
+                font-size: 20px ;
+            }
+        }
     }
 
     div{
@@ -16,6 +21,9 @@ main{
             padding: 10px;
             background-color: $mainColor;
             border: $border;
+            @include mq_682px{
+                font-size: 15px ;
+            }
         }
         img{
             height:200px;

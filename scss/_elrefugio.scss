@@ -15,6 +15,16 @@ main{
             padding: 10px 5px;
             border: solid black 3px;
         }
+        .bgPerro{
+            @include mq_850px{
+                font-size: 20px ;
+                background-image: url(../img/refugio/nariz-de-un-perro.png);
+                background-size: auto;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+       
         div{
             display: flex;
             flex-direction: row;
