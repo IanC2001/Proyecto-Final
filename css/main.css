@@ -170,7 +170,6 @@ footer .imgFooter {
 
 main section {
   margin-top: 55px;
-  width: 90%;
   height: auto;
   margin-left: 55px;
   font-size: 40px;
@@ -255,7 +254,6 @@ footer .imgFooter {
 main {
   display: flex;
   margin-top: 55px;
-  width: 90%;
   height: auto;
   color: black;
 }
