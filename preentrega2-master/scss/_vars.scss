@@ -13,3 +13,33 @@ $border:solid black 3px;
 $tituloLg:40px;
 $tituloMd:30px;
 $tituloSm:25px;
+
+@mixin mq_1500px{
+    @media (max-width: 1500px){
+        @content;
+    }
+}
+
+@mixin mq_1024px{
+    @media (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin mq_850px{
+    @media (max-width: 850px){
+        @content;
+    }
+}
+
+@mixin mq_682px{
+    @media (max-width: 682px){
+        @content;
+    }
+}
+
+@mixin mq_480px{
+    @media (max-width: 480px){
+        @content;
+    }
+}

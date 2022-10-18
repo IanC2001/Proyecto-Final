@@ -1,22 +1,3 @@
-html{
-    font-size: 62.5%;
-}
-
-body{
-    background-image: url(../img/bg/purple.jpg);
-    background-repeat: repeat;
-    background-attachment:fixed;
-    margin: 0%;
-    .contenedor{
-        display: grid;
-        min-height: 100vh;
-         grid-template-areas: 
-        "header"
-        "main"
-        "footer"
-        ;
-    }
-}
 
 header{
     background-color:$mainColor;

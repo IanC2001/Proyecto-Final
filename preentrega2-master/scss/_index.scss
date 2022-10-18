@@ -31,6 +31,10 @@ header{
 
 nav{
     ul{
+        @include mq_682px{
+              display: flex;  
+              flex-direction: column;
+        }
         list-style:none;
         li{
             font-size: 15px;
@@ -83,6 +87,9 @@ main{
         width: 65em;
         padding: 1px;
         margin:50px;
+        @include mq_1500px{
+            display: none;
+        }
     } 
 }
 
