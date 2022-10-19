@@ -9,7 +9,7 @@ main{
         border: solid black 3px;
         p{
             @include mq_480px{
-                font-size: $tituloSm;
+                font-size: 15px;
             }
         }
     }

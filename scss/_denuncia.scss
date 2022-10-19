@@ -10,6 +10,11 @@ main{
         flex-wrap: nowrap;
         justify-content: center;
     }
+    video{
+        @include mq_682px{
+            width: 90%;
+        }
+    }
 }      
 
 

@@ -29,24 +29,38 @@ nav{
 
 main{
     .formap{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        @include mq_1024px{
+            flex-direction: column;
+        }
+        margin-bottom: 50px;
         form{
             background-color: $mainColor;
             padding: 50px;
             margin-bottom: 20px;
             border: $border;
             border-radius: 20px;
-            
+            @include mq_480px{
+                padding: 20px;
+                width: 50%;
+            }
             div{
                 margin-top: 1rem;
                 input, textarea, label{
                    padding: 5px 25px;
                    font-size: 15px;
+                   @include mq_480px{
+                    padding:5px 10px;
+                    font-size: 10px;
                 }
-
+                }
             }
             .boton{
                 input{
-                    width: 90%;
+                    width:80%;
                     padding: 8px 16px;
                     margin-top: 32px;
                     margin: 5px ;
@@ -58,14 +72,26 @@ main{
                     &:hover{
                         transform: scale(1.1);
                     }
+                    @include mq_1024px{
+                        padding: 0px;
+                        font-size: 10px;
+                    }
                 }
             }
         }
-        .map{
+        #map{
             background-color: $mainColor;
             padding: 10px;
             border: $border;
             border-radius:50px;
+            width: 35%;
+            @include mq_1024px{
+                padding: 0px;
+                border-radius: 0px;
+                background-color: rgba(0, 0, 0, 0);
+                border: none;
+                width: 50%;
+            }
             iframe{
                 border: $border;
                 border-radius:30px;
