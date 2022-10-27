@@ -1,0 +1,45 @@
+//variables (son para datos)
+$mainColor: rgba(242, 245, 71, 0.5);
+$secondaryColor: rgba(208, 212, 128, 0.84);
+$keyColor: black;
+
+
+$textLg:20px;
+$textMd:15px;
+$textSm:10px;
+
+$border:solid black 3px;
+
+$tituloLg:40px;
+$tituloMd:30px;
+$tituloSm:25px;
+
+@mixin mq_1500px{
+    @media (max-width: 1500px){
+        @content;
+    }
+}
+
+@mixin mq_1024px{
+    @media (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin mq_850px{
+    @media (max-width: 850px){
+        @content;
+    }
+}
+
+@mixin mq_682px{
+    @media (max-width: 682px){
+        @content;
+    }
+}
+
+@mixin mq_480px{
+    @media (max-width: 480px){
+        @content;
+    }
+}

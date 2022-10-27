@@ -1,0 +1,113 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(../img/bg/purple.jpg);
+    background-repeat: repeat;
+    background-attachment:fixed;
+    margin: 0%;
+    .contenedor{
+        display: grid;
+        min-height: 100vh;
+         grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+}
+
+header{
+    background-color:$mainColor;
+    top: 0;
+    left: 0;
+    width: 100%;
+    grid-area: header;
+    img{
+        width: 100px
+    }
+}
+
+nav{
+    ul{
+        @include mq_682px{
+              display: flex;  
+              flex-direction: column;
+        }
+        list-style:none;
+        li{
+            font-size: 15px;
+            padding: 5px 15px;
+            margin: 4px;
+            background-color:$mainColor;
+            border-radius: 15px;
+            border: solid black 1px;
+            &:hover{
+                transform: scale(1.05);
+                background-color: $secondaryColor;
+            }     
+        }                
+}   } 
+
+
+main{
+    grid-area: main ;
+    div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section{
+        margin-top: 55px;
+        margin-bottom: 10px;
+        width: 90%;
+        height: auto;
+        font-size: $textLg;
+        color:$keyColor;
+        padding: 10px 5px;
+        border: solid black 3px;
+        article{
+            h1,h2{
+                font-size:$tituloLg;
+            }
+            ul{
+                color:$keyColor;
+                font-family: 'Roboto', sans-serif;
+                
+                @include mq_682px{
+                    font-size: $textLg;
+                }
+            }
+        }
+    }
+    .imgViejito{
+        height: 35rem; 
+        border: solid  rgb(0, 0, 0) 3px;
+        width: 65em;
+        padding: 1px;
+        margin:50px;
+        @include mq_1500px{
+            display: none;
+        }
+    } 
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $mainColor;
+    justify-content: space-between;
+    grid-area: footer;
+    img{
+        height: 100px;
+    }
+    .imgFooter{
+        height: 55px;
+        margin: 10px;
+    }
+}
+   
+

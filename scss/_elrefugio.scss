@@ -1,0 +1,40 @@
+
+main{
+    div{
+        margin-top: 10rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        section{
+            margin-top: 55px;
+            margin-bottom: 10px;
+            width: 90%;
+            height: auto;
+            font-size: $textLg;
+            color: $keyColor;
+            padding: 10px 5px;
+            border: solid black 3px;
+        }
+        .bgPerro{
+            @include mq_850px{
+                font-size: $textLg ;
+                background-image: url(../img/refugio/nariz-de-un-perro.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            }
+        }
+       
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            .imgPerros{
+                height:500px;
+            }
+        }   
+    }
+}
+

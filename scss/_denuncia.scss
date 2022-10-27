@@ -1,0 +1,21 @@
+
+main{
+    display: flex;
+    margin-top: 55px;
+    height: auto;
+    color: $keyColor;
+    .videoFlex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    video{
+        @include mq_682px{
+            width: 90%;
+        }
+    }
+}      
+
+
+   
