@@ -6,7 +6,7 @@ body{
     background-image: url(../img/bg/purple.jpg);
     background-repeat: repeat;
     background-attachment:fixed;
-    margin: 0%;
+    margin: 0;
     .contenedor{
         display: grid;
         min-height: 100vh;
@@ -16,6 +16,7 @@ body{
         "footer"
         ;
     }
+    overflow-x: hidden;
 }
 
 header{

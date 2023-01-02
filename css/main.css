@@ -16,6 +16,18 @@ header {
   text-align: center;
 }
 
+@-webkit-keyframes degrade {
+  0% {
+    background-color: rgb(0, 255, 0);
+  }
+  50% {
+    background-color: rgba(0, 255, 94, 0.331);
+  }
+  100% {
+    background-color: rgb(0, 255, 0);
+  }
+}
+
 @keyframes degrade {
   0% {
     background-color: rgb(0, 255, 0);
@@ -25,6 +37,41 @@ header {
   }
   100% {
     background-color: rgb(0, 255, 0);
+  }
+}
+@-webkit-keyframes salto {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  10% {
+    transform: translate(0%, -100%);
+  }
+  20% {
+    transform: translate(0%, 40%) scale(1.4);
+  }
+  30% {
+    transform: translate(0%, -20%);
+  }
+  40% {
+    transform: translate(0%, 25%) scale(1.3);
+  }
+  50% {
+    transform: translate(0%, -10%);
+  }
+  60% {
+    transform: translate(0%, 15%) scale(1.1);
+  }
+  70% {
+    transform: translate(0%, -5%);
+  }
+  80% {
+    transform: translate(0%, 0%);
+  }
+  90% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
   }
 }
 @keyframes salto {
@@ -74,7 +121,8 @@ body {
   background-image: url(../img/bg/purple.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
-  margin: 0%;
+  margin: 0;
+  overflow-x: hidden;
 }
 body .contenedor {
   display: grid;
@@ -357,6 +405,4 @@ main .formap #map {
 main .formap #map iframe {
   border: solid black 3px;
   border-radius: 30px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
